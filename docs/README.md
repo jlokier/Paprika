@@ -4,7 +4,7 @@ Paprika is a custom database implementation for `State` and `Storage` trees of E
 
 ## Design
 
-Paprika is a database that uses [memory-mapped files](https://en.wikipedia.org/wiki/Memory-mapped_file). To handle concurrency, [Copy on Write](https://en.wikipedia.org/wiki/Copy-on-write) is used. This allows multiple concurrent readers to cooperate in a full lock-free manner and a single writer that runs the current transaction. In that manner, it's heavily inspired by [LMBD](https://github.com/LMDB/lmdb). Paprika uses 4kb pages.
+Paprika is a database that uses [memory-mapped files](https://en.wikipedia.org/wiki/Memory-mapped_file). To handle concurrency, [Copy on Write](https://en.wikipedia.org/wiki/Copy-on-write) is used. This allows multiple concurrent readers to cooperate in a full lock-free manner and a single writer that runs the current transaction. In that manner, it's heavily inspired by [LMDB](https://github.com/LMDB/lmdb). Paprika uses 4kb pages.
 
 ### Reorganizations handling
 
